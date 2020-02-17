@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Bio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #6fc4b7;
+  padding: 25px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #998465;
+  padding: 25px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: upper-roman;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 4;
+  -ms-flex: 3;
+  flex: -7;
+  background-color: #3686d1;
+  padding: 10px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>My Biography</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://mail.google.com/mail/u/1/#sent?projector=1">Introduction</a></li>
+      <li><a href="https://www.bracu.ac.bd/">Education</a></li>
+      <li><a href="https://www.bkash.com/bn">Experience</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Introduction</h1>
+    <p>Hello!!! I am Syed Hasan Ahmed.</p>
+  </article>
+  
+  <article>
+    <h1>Educaion</h1>
+    <p>I was a student of Barishal Zilla School.<br>
+	I completed my Secondary School Certificate (SSC)<br> 
+	from this school</p>
+    <p>I have completed my Higher School<br> 
+	Certificate from Govt. Syed Hatem Ali College.</p>
+	<p>Currently I am studying Brac University.<br> 
+	I am doing my major at E-Business and Marketing.</p>
+  </article>
+  
+  <article>
+    <h1>Experiences</h1>
+    <p>Currently I am working at bKash as a Junior Digital Service officer.</p>
+  </article>
+</section>
+
+</body>
+</html>
